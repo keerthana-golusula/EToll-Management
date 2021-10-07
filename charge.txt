@@ -1,0 +1,61 @@
+create table charge 
+(
+    tid number(3),
+    vtype varchar2(20),
+    one_way number(5),
+    up_down number(5),
+    month_pass number(5),
+    CONSTRAINT charge_pk
+    PRIMARY KEY(tid,vtype),
+    CONSTRAINT charge_fk FOREIGN KEY(tid) REFERENCES tollgate(tid) ON DELETE CASCADE 
+);
+insert into charge values(1,'car/van/jeep',95,140,3140);
+insert into charge values(1,'LCV',150,225,4985);
+insert into charge values(1,'bus/truck',310,465,10340);
+insert into charge values(1,'upto 6 axle',480,720,16035);
+insert into charge values(1,'7 or more axle',600,900,9950);
+insert into charge values(2,'car/van/jeep',70,105,2315);
+insert into charge values(2,'LCV',110,165,3660);
+insert into charge values(2,'bus/truck',225,340,7565);
+insert into charge values(2,'upto 6 axle',350,525,11690);
+insert into charge values(2,'7 or more axle',440,660,14635);
+insert into charge values(3,'car/van/jeep',85,125,2830);
+insert into charge values(3,'LCV',130,195,4335);
+insert into charge values(3,'bus/truck',265,395,8800);
+insert into charge values(3,'upto 6 axle',400,600,13330);
+insert into charge values(3,'7 or more axle',520,780,17345);
+insert into charge values(4,'car/van/jeep',60,90,1845);
+insert into charge values(4,'LCV',110,160,3225);
+insert into charge values(4,'bus/truck',215,325,6450);
+insert into charge values(4,'upto 6 axle',345,520,10370);
+insert into charge values(4,'7 or more axle',345,520,10370);
+insert into charge values(5,'car/van/jeep',60,90,1770);
+insert into charge values(5,'LCV',105,155,3100);
+insert into charge values(5,'bus/truck',205,310,6200);
+insert into charge values(5,'upto 6 axle',330,500,9965);
+insert into charge values(5,'7 or more axle',330,500,9965);
+insert into charge values(6,'car/van/jeep',75,110,2460);
+insert into charge values(6,'LCV',120,180,3970);
+insert into charge values(6,'bus/truck',250,375,8320);
+insert into charge values(6,'upto 6 axle',270,410,9075);
+insert into charge values(6,'7 or more axle',475,715,15885);
+insert into charge values(7,'car/van/jeep',65,100,2245);
+insert into charge values(7,'LCV',110,165,3625);
+insert into charge values(7,'bus/truck',230,340,7600);
+insert into charge values(7,'upto 6 axle',250,375,8290);
+insert into charge values(7,'7 or more axle',430,665,14510);
+insert into charge values(8,'car/van/jee',80,120,2615);
+insert into charge values(8,'LCV',125,180,4135);
+insert into charge values(8,'bus/truck',255,385,8545);
+insert into charge values(8,'upto 6 axle',395,595,13205);
+insert into charge values(8,'7 or more axle',495,745,16535);
+insert into charge values(9,'car/van/jeep',65,95,2145);
+insert into charge values(9,'LCV',105,155,3425);
+insert into charge values(9,'bus/truck',215,325,7195);
+insert into charge values(9,'upto 6 axle',410,620,13740);
+insert into charge values(9,'7 or more axle',410,620,13740);
+insert into charge values(10,'car/van/jeep',35,55,1170);
+insert into charge values(10,'LCV',55,85,1890);
+insert into charge values(10,'bus/truck',120,180,3960);
+insert into charge values(10,'upto 6 axle',130,195,4320);
+insert into charge values(10,'7 or more axle',225,340,7555);

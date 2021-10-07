@@ -1,0 +1,7 @@
+create table operator
+(
+tid number(3),
+opassword varchar2(32),
+CONSTRAINT operator_fk FOREIGN KEY(tid) references tollgate (tid) ON DELETE CASCADE
+ON UPDATE CASCADE
+);

@@ -1,0 +1,16 @@
+create table tollgate
+(
+tid number(3),
+location varchar2(20),
+CONSTRAINT tollgate_pk PRIMARY KEY(tid)
+);
+insert into tollgate values(1,'Suryapet');
+insert into tollgate values(2,'Panthangi');
+insert into tollgate values(3,'Yadgiri');
+insert into tollgate values(4,'Raikal');
+insert into tollgate values(5,'Mahbubnagar');
+insert into tollgate values(6,'Manoharabad');
+insert into tollgate values(7,'Kamreddy');
+insert into tollgate values(8,'Khammam');
+insert into tollgate values(9,'Nizambad');
+insert into tollgate values(10,'Kadthal');

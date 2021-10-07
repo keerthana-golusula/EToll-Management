@@ -1,0 +1,8 @@
+create table pass(
+vid varchar2(10),
+tid number(3),
+date_of_end date,
+CONSTRAINT pass_pk PRIMARY KEY (vid,tid),
+CONSTRAINT pass_vid_fk FOREIGN KEY (vid) REFERENCES vehicle (vid) ON DELETE CASCADE,
+CONSTRAINT pass_tid_fk FOREIGN KEY (tid) REFERENCES tollgate (tid) ON DELETE CASCADE
+);

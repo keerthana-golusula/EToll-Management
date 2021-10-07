@@ -1,0 +1,8 @@
+create table vehicle
+(
+vid varchar2(10),
+vtype varchar2(15),
+wallet number(10) default 0,
+password varchar2(32),
+CONSTRAINT vehicle_pk PRIMARY KEY (vid)
+);

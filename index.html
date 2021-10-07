@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+    <meta name="viewport" content="width=device-width,inital-scale-1">
+    <title> Tollgate_Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet">
+</head>
+    <body>
+        <div id="header">
+                    <form method="POST" action="adminlogin.php"> 
+                         <label  for="adpassword">admin</label>
+                        <input type="password" placeholder="password" name="admin-password">
+                        <button class="btn btn-default submit"> submit</button></form>
+              <div id=btns >       <div id="btn2" class="btn btn-default">vehicle-user</div> 
+                <div id="btn1" class="btn btn-default">operator</div>
+        </div>            </div>
+            <div class="container">
+            <div class="featured">
+             <div class="row">
+               
+    <div id="operatoropen" >
+                    
+                        <br />
+                        <br />
+                <h3>welcome to operator</h3>
+                <form method="POST">
+                    <label for="tollnumber"> Enter tollnumber:</label>
+                    <input type="text" placeholder="tollgateno" name="tid" id="tollnumber">
+                                        <br/>
+                    <button type="submit" class="btn btn-default"><a href="operator.php" id="ologin">login</a></button>
+                </form> 
+                    </div>
+            <div id="useropen">
+               <h3> welcome to user</h3>  
+                <form method="POST" action="userlogin.php">
+                <label for="vehicleno">vehicleno:</label>
+                <input type="text" placeholder="vehicleno" name="vehicleno" id="vehicleno">
+                    <br />
+                    <label for="userpasword">password</label>
+                    <input type="password" id="userpassword" name="userpassword" placeholder="password">
+                    <br/>
+                <button type="submit" class="btn btn-default" id="ulogin">login</button>
+                </form>
+                    <p>if not yet registered please signup <button id="here" >here</button> </p>
+            </div>
+             <div id="usersignup">
+                
+                   <form method="POST" action="usersignup.php" >
+                <label for="vehicle">vehicleno:</label>
+                       <input type="text" placeholder="vehicleno" id="vehicle" name="vehicle">
+                       <br />
+                    <label for="vehicle_type">vehicle-type:</label>
+                    <select name=vtype id="vehicle_type">
+                       
+                        <option value="car/van/jeep">car/van/jeep</option>
+                        <option value="LCV">LCV</option>
+                        <option value="truck/bus">truck/bus</option>
+                        <option value="upto6axles">up to 6 axles</option>
+                        <option value="7 or more axles">7 or more axles</option>
+                    </select>
+                    <br />
+                       <label for="password3">  enter password:</label>
+                       <input type="password" id="password3" name="password3" placeholder="enter password"><br/>
+                        <button type="submit" class="btn btn-default"id="usignup">signup</button>
+                </form>
+                <p id="error2">error:</p>
+            </div>
+        </div> 
+    </div>
+</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script src="tollgate.js">
+
+        </script> 
+     
+        
+    </body>
+
+</html>

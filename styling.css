@@ -1,0 +1,146 @@
+div{
+     width: auto;
+    text-align: center;
+}
+#marque{
+//color: rgb(100,150,10);
+font-weight: 100;
+    font-size: 30px;
+    font-family: bold;
+}
+#header{
+   // padding-left: 0px;
+    background-color: rgba(150,150,20,0.5);
+    height:150px;
+
+    //align-content: center;
+    //align-self: center;
+  }
+/*#btn2{
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+}*/
+/*#btns{
+    //width: 100px;
+    //height: 100px;
+    //background-color: red;
+
+    position: absolute;
+    top:200;
+    //bottom: 0;
+    //left: 0;
+    right: 0;
+   margin: auto;
+}*/
+
+#btn3 {
+    margin-left: 125px;
+    text-align: center;
+    width: 150px;
+}
+#btn2{
+    margin-left: 500px;
+}
+#btn1,#btn2,#span1{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    //color: rgba(250,10,10,0.5);
+    font-weight: bold;
+    //background-color: rgba(120,45,80,0.5);
+border-radius: 10px;
+    padding: 5px;
+}
+ .btn-default{
+    width: auto;
+    height: 25px;
+    background-color: rgba(120,45,80,0.5);
+    color: rgba(10,10,100,0.5);
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+body{
+   background-color:aquamarine;
+    border: 10px,10px,10px,10px;
+    height: auto ;
+}
+ #btn1:hover{
+    background-color: rgb(120,45,80);
+}
+ #btn2:hover{
+    background-color: rgb(120,45,80);
+}
+
+#operatoropen{
+    margin: 10px;
+    height: auto;
+    width:500px;
+    border-color: rgba(100,100,200,0.5);
+    border-color: black;
+   // border-radius: 20px;
+    background-color: rgba(100,100,250,0.4);
+    padding: 10px;
+    //color: rgba(150,10,20,0.8);
+   display: none;
+}
+#useropen{
+    margin:10px;
+     height: auto;
+    width:400px;
+    border-color: black;
+    border-radius: 20px;
+    background-color: white;
+    
+    padding: 10px;
+   // color: rgba(150,10,20,0.8);
+   //display: none;
+}
+ 
+#usersignup{
+    margin:10px;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    //background-color: rgb(100,150,50);
+    padding: 10px;
+ //   color: rgba(150,10,20,0.8);
+   // display: none;
+}
+#wallet-pass{
+    padding-left: 20px;
+    padding-right: 20px;
+    //background-color: bisque;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+.footer{
+     text-align: center;
+}
+@media (min-width: 480px) and (max-width: 768px)
+{
+    
+    .featured .btn{
+        font-size:20px;
+        
+    }
+    .featured{
+        padding-left: 200px;
+        align-content: center;
+    }
+    
+}
+@media (min-width: 768px)
+{
+    .featured{
+        padding-left: 50px;
+        margin-left: 300px;
+    }
+}
